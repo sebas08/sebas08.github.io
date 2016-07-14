@@ -389,24 +389,6 @@ jQuery(document).ready(function(){
 		}
 	});
 
-	//show the projects slider if user clicks the show-projects button
-	intro.on('click', 'a[data-action="show-projects"]', function(event) {
-		event.preventDefault();
-		intro.addClass('projects-visible');
-		projectsContainer.addClass('projects-visible');
-		//animate single project - entrance animation
-		setTimeout(function(){
-			showProjectPreview(projectsSlider.children('li').eq(0));
-		}, 200);
-	});
-
-	intro.on('click', function(event) {
-		//projects slider is visible - hide slider and show the intro panel
-		if( intro.hasClass('projects-visible') && !$(event.target).is('a[data-action="show-projects"]') ) {
-			intro.removeClass('projects-visible');
-			projectsContainer.removeClass('projects-visible');
-		}
-	});
 
 	//select a single project - open project-content panel
 	projectsContainer.on('click', '.cd-slider a', function(event) {
