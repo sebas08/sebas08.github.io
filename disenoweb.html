@@ -34,22 +34,45 @@
 
 	<!-- Home -->
 	<div class="cd-projects-wrapper projects-visible index">
-		<section class="cerrar col-md-12">
+		<section class="hidden visible-xs">
+			<nav class="cd-stretchy-nav">
+				<a class="cd-nav-trigger" href="#0">
+					Menu
+					<span aria-hidden="true"></span>
+				</a>
+				<ul>
+					<li ><a href="index.html" class=" demo-icon icon-heart"><span class="">Home</span></a></li>
+					<li><a href="disenoweb.html" class="active"><span>Web</span></a></li>
+					<li><a href="branding.html"><span>Branding</span></a></li>
+					<li><a href="multimedia.html"><span>Multimedia</span></a></li>
+					<li><a href="index.html#contacto"><span>Contacto</span></a></li>
+
+				</ul>
+
+				<span aria-hidden="true" class="stretchy-nav-bg"></span>
+			</nav>
+		</section>
+		<section class="cerrar col-md-12 hidden-xs">
 			<div class="container">
-			<div class="autor col-md-6">
+			<div class="autor col-md-6 ">
 				<a href="index.html#portafolio" class="volver">
 				<div class="insignia"><img src="./img/foto_web.png" alt=""></div>
-				<div class="autor-info">
+				<div class="autor-info ">
 					<h2 class="font title-azull">Sebastian Huertas <br><small>Diseñador Gráfico</small></h2 >
 				</div>
 			</a>
+			</div>
+			<div class="col-md-6">
+				<a class="font btn-portafolio col-md-3" href="disenoweb.html"><p>Diseño Web</p></a>
+				<a class="font btn-portafolio col-md-3" href="branding.html"><p>Branding</p></a>
+				<a class="font btn-portafolio col-md-3" href="multimedia.html"><p>Multimedia</p></a>
 			</div>
 			</div>
 
 
 		</section>
 
-		<section id="footer" class="navbar-fixed-bottom">
+		<section id="footer" class="navbar-fixed-bottom hidden-xs">
 			<p class="creditos text-center">© 2016 | Portafolio by <strong>Sebastian Huertas</strong></p>
 		</section>
 
@@ -303,38 +326,6 @@
 	</div>
 	 <!-- .cd-project-content -->
 	<!-- fin portafolio-->
-	<div id="contact" class="modal-demo" style="display: none;">
-			<button type="button" class="close" onclick="Custombox.close();">
-					<i class="icon-close"></i>
-			</button>
-			<div class="modal-content">
-					<div class="modal-header">
-							<img src="./Portfolio - Eduard-Dan Stanescu_files/envelope.png" alt="envelope" data-pin-nopin="true">
-					</div>
-					<form class="contact-form clearfix" action="http://eduardstanescu.com/mail.php" method="POST" novalidate="novalidate">
-					<div class="modal-info">
-							<div class="input-container grid-50">
-									<input type="text" name="firstname" placeholder="First name" maxlength="50">
-							</div>
-							<div class="input-container grid-50 grid-left">
-									<input type="text" name="lastname" placeholder="Last name" maxlength="50">
-							</div>
-							<div class="input-container grid-100">
-									<input type="email" name="email" placeholder="Email" maxlength="100">
-							</div>
-							<div class="input-container grid-100">
-									<input type="text" name="subject" placeholder="Subject">
-							</div>
-							<div class="input-container textbox grid-100">
-									<textarea name="message" placeholder="Your message"></textarea>
-							</div>
-					</div>
-			</form></div>
-			<div class="modal-footer">
-					<button id="sendmessage" type="submit" class="uk-button-green">Send message</button>
-			</div>
-
-	</div>
 <!-- Bootstrap Core JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-2.1.4.js"></script>
